@@ -10,9 +10,9 @@ namespace Container_Vervoer.Classes
     {
         public string Naam { get; }
         public int Gewicht { get; } //IN TON NIET KG
-        public Type Type { get; }
+        public TypeContainer Type { get; }
 
-        public Container(string naam, int gewicht, Type type)
+        public Container(string naam, int gewicht, TypeContainer type)
         {
             Naam = naam;
             Gewicht = gewicht;

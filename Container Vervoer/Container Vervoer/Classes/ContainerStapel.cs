@@ -15,7 +15,7 @@ namespace Container_Vervoer.Classes
             bool status = false;
             foreach(Container container in Stapel)
             {
-                if(container.Type == Type.Waardevol)
+                if(container.Type == TypeContainer.Waardevol)
                 {
                     status = true;
                     break;
@@ -38,14 +38,7 @@ namespace Container_Vervoer.Classes
         }
         public bool RuimteCheck(Container container)
         {
-            if (Gewicht() + container.Gewicht < 120)
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
+            return Gewicht() + container.Gewicht < 120;
         }
         public bool Toevoegen(Container container)
         {

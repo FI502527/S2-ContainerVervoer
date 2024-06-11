@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Container_Vervoer
 {
-    public enum Type
+    public enum TypeContainer
     {
         Normaal,
         Waardevol,

@@ -25,11 +25,11 @@ namespace Container_Vervoer.Classes
         {
             switch (container.Type)
             {
-                case Type.Waardevol:
+                case TypeContainer.Waardevol:
                     return ToevoegenWaardevol(container);
-                case Type.Gekoeld:
+                case TypeContainer.Gekoeld:
                     return ToevoegenGekoeld(container);
-                case Type.Normaal:
+                case TypeContainer.Normaal:
                     return ToevoegenNormaal(container);
             }
             return false;
